@@ -1,0 +1,99 @@
+/*For cloud moving (animation)*/
+
+@keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-webkit-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-moz-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-ms-keyframes move-clouds-back {
+    from {background-position: 0;}
+    to {background-position:10000px 0;}
+}
+
+/**/
+
+@font-face {
+    font-family: medieval;
+    src: url("../../Resources/Fonts/anirb___.ttf");
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 100%;
+}
+
+body {
+    background: url("../../Resources/Images/Background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.cloud{
+    background:transparent url("../../Resources/Images/clouds.png") repeat top center;
+    z-index:3;
+
+    -moz-animation:move-clouds-back 200s linear infinite;
+    -ms-animation:move-clouds-back 200s linear infinite;
+    -o-animation:move-clouds-back 200s linear infinite;
+    -webkit-animation:move-clouds-back 200s linear infinite;
+    animation:move-clouds-back 200s linear infinite;
+}
+
+h4{
+    text-align: center;
+    font-size: 40px;
+    font-family: medieval;
+}
+
+#for_logo{
+    background-color: rgba(25, 100, 212, 0.6);
+    border-radius: 25px;
+}
+
+#for_carousel{
+    background-color: rgba(110, 137, 150, 0.7);
+    box-shadow: 1px 3px 20px 1px #364f69;
+    text-shadow: 3px -4px 9px black;
+    border-radius: 50px;
+}
+
+#main_content{
+    background-color: rgba(110, 137, 150, 0.7);
+    box-shadow: 1px 3px 20px 1px #364f69;
+}
+
+#main_content img{
+    box-shadow: 1px -3px 20px 1px black;
+}
+
+#main_content h5{
+    font-family: medieval;
+    font-size: 21px;
+}
+
+#first_text, #second_text, #third_text{
+    background-color: rgba(34, 117, 188, 0.6);
+    box-shadow: inset 0px -1px 20px 0px black;
+    font-size: 19px;
+}
+
+.footer-copyright{
+    background-color: #4D4D4D;
+}
+
+.footer-copyright a{
+    color: #B3B3B3;
+    text-decoration: none;
+}
+
+.footer-copyright a:hover{
+    color: #5e1d1f;
+}

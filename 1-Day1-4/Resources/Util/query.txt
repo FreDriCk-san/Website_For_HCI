@@ -1,0 +1,9 @@
+CREATE TABLE Grades(
+    grade_id int AUTO_INCREMENT PRIMARY KEY,
+    statement VARCHAR(30),
+    upd_time TIMESTAMP
+    ) ENGINE=INNODB;
+
+
+INSERT INTO Grades(statement, upd_time) VALUES
+('Like', '2018-11-30 23:58:40')
